@@ -15,17 +15,13 @@ const Calculator = () => {
     }
   }
 
-  const clearInput = ()=>(
-    setInput("")
-  )
-
   const calculateResult = ()=> {
 
     try {
       setInput(eval(input).toString())
     }
     catch {
-      setInput("Error");
+      setInput("input valid number");
     }
 
   }
